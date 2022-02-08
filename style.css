@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+:root {
+  --Violet: hsl(257, 40%, 49%);
+  --Soft_Magenta: hsl(300, 69%, 71%);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+  background-color: var(--Violet);
+  background-image: url(./images/bg-mobile.svg);
+  background-repeat: no-repeat;
+  color: white;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: 0 auto;
+}
+
+header img {
+  width: 7rem;
+  height: 6rem;
+  margin-bottom: 1rem;
+  display: flex;
+
+}
+
+.pagina img {
+  width: 100%;
+  margin-top: .8rem;
+  margin-bottom: 3rem;
+}
+
+h1 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+p {
+  color: rgb(230, 230, 230);
+  font-size: 1rem;
+  margin-bottom: 2rem;
+}
+
+.boton {
+  margin-bottom: 1rem;
+  color: var(--Violet);
+  text-decoration: none;
+  background-color: white;
+  border-radius: 25px;
+  width: 12rem;
+  height: 2.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  margin-bottom: 5rem;
+  font-size: .8rem;
+  -webkit-box-shadow: 5px 5px 5px -1px rgba(0,0,0,0.1);
+  -moz-box-shadow: 5px 5px 5px -1px rgba(0,0,0,0.1);
+  box-shadow: 5px 5px 5px -1px rgba(0,0,0,0.1);
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
