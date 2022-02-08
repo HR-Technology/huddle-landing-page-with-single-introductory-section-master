@@ -22,8 +22,6 @@ body {
 }
 
 .container {
-  display: flex;
-  flex-direction: column;
   width: 80%;
   margin: 0 auto;
 }
@@ -69,9 +67,10 @@ p {
   margin: 0 auto;
   margin-bottom: 5rem;
   font-size: .8rem;
-  -webkit-box-shadow: 5px 5px 5px -1px rgba(0,0,0,0.1);
-  -moz-box-shadow: 5px 5px 5px -1px rgba(0,0,0,0.1);
-  box-shadow: 5px 5px 5px -1px rgba(0,0,0,0.1);
+  -webkit-box-shadow: 10px 10px 10px -1px rgba(0,0,0,0.1);
+  -moz-box-shadow: 10px 10px 10px -1px rgba(0,0,0,0.1);
+  box-shadow: 10px 10px 10px -1px rgba(0,0,0,0.1);
+  font-family: 'Poppins', sans-serif;
 }
 
 .cards {
@@ -90,10 +89,8 @@ p {
   border-radius: 50%;
   margin-left: 1rem;
   margin-bottom: 2rem;
-}
-
-.card a {
   color: white;
+  text-decoration: none;
 }
 
 .attribution { 
@@ -107,7 +104,79 @@ p {
 }
 
 @media (min-width: 1366px) {
+  .container {
+    width: 90%;
+  }
+
   body {
     background-image: url(./images/bg-desktop.svg);
+  }
+
+  header {
+    height: 9.2rem;
+  }
+
+  header img {
+    margin-top: 2rem;
+    width: 12rem;
+    height: 6rem;
+  }
+
+  main .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .mockups {
+    width: 55%;
+    padding: .7rem 0;
+  }
+
+  .mockups img {
+    margin: 0;
+  }
+
+  .texto {
+    width: 40%;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    text-align: start;
+    margin-bottom: 1rem;
+  }
+
+  .texto h1 {
+    font-size: 2.5rem;
+  }
+
+  .texto p {
+    font-size: 1.1rem;
+  }
+
+  .boton {
+    height: 3rem;
+    margin: 0;
+    font-size: 1.2rem;
+  }
+
+  .boton:hover {
+    background-color: var(--Soft_Magenta);
+    color: white;
+  }
+
+  .cards {
+    justify-content: end;
+  }
+
+  .card {
+    width: 3vw;
+    height: 5vh;
+  }
+
+  .card:hover {
+    border: 1px solid var(--Soft_Magenta);
+    color: var(--Soft_Magenta);
   }
 }
