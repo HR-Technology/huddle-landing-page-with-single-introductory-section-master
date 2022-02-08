@@ -36,7 +36,7 @@ header img {
 
 }
 
-.pagina img {
+.mockups img {
   width: 100%;
   margin-top: .8rem;
   margin-bottom: 3rem;
@@ -74,5 +74,40 @@ p {
   box-shadow: 5px 5px 5px -1px rgba(0,0,0,0.1);
 }
 
-.attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
+.cards {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  width: 7vw;
+  height: 4vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid white;
+  border-radius: 50%;
+  margin-left: 1rem;
+  margin-bottom: 2rem;
+}
+
+.card a {
+  color: white;
+}
+
+.attribution { 
+  font-size: 11px; 
+  text-align: center; 
+}
+
+.attribution a { 
+  color: rgb(100, 128, 255);
+  text-decoration: none;
+}
+
+@media (min-width: 1366px) {
+  body {
+    background-image: url(./images/bg-desktop.svg);
+  }
+}
